@@ -1,0 +1,167 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 0 5px gray;
+    height: 72px;
+    line-height: 51px;;
+}
+
+.menu_ngang {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_ngang li {
+    padding: 10px;
+}
+
+.menu_ngang a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu_ngang a:hover {
+    color: orange;
+}
+footer{
+    background-color: #bf9f70;
+    width: 100%;
+    height: 50px;
+}
+
+
+.ao{
+    box-shadow: 0 0 5px gray;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+
+
+.ao img{
+    max-width: 95%;
+}
+
+.danh-muc-san-pham{
+    width: 25%;
+    float: left;
+    position: relative; /* Để có thể sử dụng position: absolute cho .column:hover */
+    overflow: hidden; 
+}
+.san-pham:hover,
+.danh-muc-san-pham:hover {
+    transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+    z-index: 1; /* Đảm bảo .column:hover nổi lên trên các phần tử khác */
+}
+
+.the-loai .danh-muc-san-pham{
+    width: 33%;
+    float: left;
+    margin-left: 2.5px 
+}
+
+
+.block-wraper {
+    padding: 20px;
+    background-color: aqua;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+
+h2{
+    color: #333;
+    text-align: center;
+}
+
+
+.footer-detail {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.image-size a img{
+    width: 100px;
+    height: 200px;
+}
+.footer-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-info h4 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-info p,
+.footer-info ul {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-info li {
+    margin-bottom: 8px;
+}
+
+.footer-info a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-info a:hover {
+    color: #1e87cc;
+}
+
+.signin-container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.signin-content {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

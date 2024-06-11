@@ -1,0 +1,60 @@
+.column{
+    width: 25%;
+    float: left;
+}
+.san-pham{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+}
+.san-pham .ten{
+    font-size:larger;
+    font-variant: small-caps;
+    color:blue;
+}
+.san-pham img{
+    max-width: 95%;
+}
+.san-pham .gia{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+.san-pham .gia del{
+    color: gray;
+}
+
+
+
+.product-sale {
+    top: 0;
+    right: 0;
+    background: #f00;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    width: 60px;
+    height: 72px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
