@@ -14,6 +14,10 @@ if (isset($_GET['page'])) {
             $detail = new ProductController;
             $detail->detail();
             break;
+        case 'detailSale':
+            $detail = new ProductController;
+            $detail->detailSale();
+            break;
 
         case 'product':
             $product = new ProductController;
@@ -33,11 +37,20 @@ if (isset($_GET['page'])) {
             $controller = new ProductController();
             $controller->getAllProduct();
             break;
+        case 'cateproduct':
+            $controller = new ProductController();
+            $controller->getProductByIdDanhMuc();
+            break;
 
+        case 'giohang':
+            $controller = new ProductController();
+            $controller->getGiohang();
+            break;
         default:
             $home = new HomeController();
             $home->home();
             break;
+
     }
 } else {
     $home = new HomeController();

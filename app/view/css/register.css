@@ -1,0 +1,12 @@
+.box-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.register{
+    margin-top: 20px;
+}
+.register-title{
+    text-align: center;
+}

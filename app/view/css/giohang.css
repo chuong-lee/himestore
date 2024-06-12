@@ -1,0 +1,149 @@
+.title-page{
+    text-align: center;
+}
+
+
+.title-page {
+    
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.count-cart {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+.gia,
+.column img{
+    width: 15%;
+    float: left;
+}
+
+.info-san-pham{
+    width: 70%;
+    float: left;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background-color: #555;
+}
+
+img {
+    width: 150px;
+}
+
+.product-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.product-title {
+    margin-bottom: 20px;
+    /* Khoảng cách giữa các sản phẩm */
+}
+
+.header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.select-swap {
+    display: flex;
+}
+
+.sd {
+    /* margin-right: 10px; */
+    /* Khoảng cách giữa các size */
+}
+
+.sd span {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #fff;
+    /* Màu nền của size */
+    border: 1px solid #ccc;
+    border: 1px solid #ccc;
+    /* Viền của size */
+    cursor: pointer;
+}
+
+.sd span:hover {
+    background-color: #fff;
+    /* Màu nền khi di chuột qua */
+    border: 1px solid #333;
+}
+
+#quantity span{
+    background-color: #000;
+    color: #fff;
+}
+.thanh_toan{
+    margin-top: 25px;
+}
+
+.tong_tien{
+    text-align: right;
+}
+
+
+

@@ -36,14 +36,15 @@
                                     extract($product);
                                     echo '<tr>
                                         <td>'.$counter++.'</td>
-                                        <td id="name">'.$name.'</td>
-                                        <td id="price">'.$gia.' </td>
-                                        <td><a href="#"><img style="width: 200px; height: 300px;" src="img/'.$image.' .webp" alt="'.$name.'"></a></td>
-                                        <td id="price">'.$soluong.' </td>
-                                        <td id="price">'.$luot_mua.' </td>
-                                        <td id="price">'.$sale.' </td>
-                                        <td id="price">'.$mota.' </td>
-                                        <td><a href="indexAdmin.php?page=editpro&id='.$id.'">Sửa</a> | <a href="indexAdmin.php?page=delpro&id='.$id.'">Xóa</a></td>
+                                        <td class="name">'.$name.'</td>
+                                        <td class="price">'.$gia.' </td>
+                                        <td><a href="#"><img style="width: 200px; height: 300px;" src="img/'.$image.'" alt="'.$name.'"></a></td>
+                                        <td class="price">'.$soluong.' </td>
+                                        <td class="price">'.$luot_mua.' </td>
+                                        <td class="price">'.$sale.' </td>
+                                        <td class="price">'.$mota.' </td>
+                                        <td><button type="button" class="btn btn-success"><a href="indexAdmin.php?page=editpro&id='.$id.'">Sửa</a></button> </td>
+                                        <td><button type="button" class="btn btn-danger"><a href="indexAdmin.php?page=delpro&id='.$id.'">Xóa</a></button></td>
                                     </tr>';
                                 } ?>
                                     

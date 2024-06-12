@@ -10,6 +10,11 @@ class ProductModel{
         return $this->db->getAll($sql);
     }
 
+    function getProductByIdDanhMuc($id_danhmuc){
+        $sql = "select s.id , s.name , s.gia, s.image , d.tenDanhMuc from sanpham s join danhmuc d on d.id = s.id_danhmuc where d.id= " . $id_danhmuc ;
+        return $this->db->getAll($sql);
+    }
+    
     function getProductByLuotMua(){
         $sql = "SELECT * FROM sanpham WHERE luot_mua > 200";
         return $this->db->getAll($sql);

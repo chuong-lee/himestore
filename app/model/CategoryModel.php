@@ -9,4 +9,9 @@
              $sql = "SELECT * FROM danhmuc";
             return $this->db->getAll($sql);
         }
+
+        function getCateById($id){
+            $sql = "SELECT * FROM danhmuc where id = $id";
+           return $this->db->getOne($sql);
+       }
  }

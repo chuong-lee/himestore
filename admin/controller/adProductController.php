@@ -111,10 +111,14 @@ class adProductController {
     function editPro(){
         if(isset($_POST['edit'])){
             $data = [];
-            
-            $data['name'] = $_POST['name'];
-            $data['idcate'] = $_POST['idcate'];
-            $data['image'] = $_FILES['image']['name'];
+            $data['id_danhmuc'] = $_POST['id_danhmuc'] ?? null;
+            $data['name'] = $_POST['name'] ?? '';
+            $data['gia'] = $_POST['gia'] ?? 0;
+            $data['soluong'] = $_POST['soluong'] ?? 0;
+            $data['mota'] = $_POST['mota'] ?? '';
+            $data['sale'] = $_POST['sale'] ?? 0;
+            $data['luot_mua'] = $_POST['luot_mua'] ?? 0;
+            $data['image'] = $_FILES['image']['name'] ?? '';
             $data['id'] = $_POST['idpro'];
             $data['image_old'] = $_POST['image_old'];
             if($data['image'] == ''){

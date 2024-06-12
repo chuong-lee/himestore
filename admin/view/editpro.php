@@ -10,14 +10,14 @@
                                 <div class="content table-responsive table-full-width">
                                     <form action="" method="post" enctype="multipart/form-data">
                                         <label for="">Danh mục sản phẩm</label>
-                                        <select name="idcate" id="idcate" class="form-control">
+                                        <select name="id_danhmuc" id="id_danhmuc" class="form-control">
                                             <?php
                                                 $listcate = $data['listcate'];
                                                 $pro_detail = $data['pro_detail'];
                                                 $kq = '';
                                                 foreach($listcate as $item){
                                                     extract($item);
-                                                    if($id == $pro_detail['idcate']){
+                                                    if($id == $pro_detail['id_danhmuc']){
                                                         $kq .= '<option value="'.$id.'" selected>'.$tenDanhMuc.'</option>';
                                                     } else{
                                                         $kq .= '<option value="'.$id.'">'.$tenDanhMuc.'</option>';
@@ -27,14 +27,15 @@
                                             ?>
                                         </select>
                                         <label for="">Tên sản phẩm</label>
-                                        <input type="text" name="name" id="name" class="form-control" value="<?=$pro_detail['name']?>"> 
+                                        <input type="text" name="name" id="name" class="form-control" value="<?=$pro_detail['name']?>">
+                                        <label for="">Giá sản phẩm</label> 
                                         <input type="number" name="gia" id="price" class="form-control" value="<?=$pro_detail['gia']?>">
-                            <label for="">Số lượng sản phẩm</label>
-                            <input type="number" name="soluong" id="quantity" class="form-control" value="<?=$pro_detail['soluong']?>">
-                            <label for="">Mô tả sản phẩm</label>
-                            <input type="text" name="mota" id="description" class="form-control" value="<?=$pro_detail['mota']?>">
-                            <label for="">Giảm giá sản phẩm</label>
-                            <input type="number" name="sale" id="sale-price" class="form-control" value="<?=$pro_detail['sale']?>">
+                                        <label for="">Số lượng sản phẩm</label>
+                                        <input type="number" name="soluong" id="quantity" class="form-control" value="<?=$pro_detail['soluong']?>">
+                                        <label for="">Mô tả sản phẩm</label>
+                                        <input type="text" name="mota" id="description" class="form-control" value="<?=$pro_detail['mota']?>">
+                                        <label for="">Giảm giá sản phẩm</label>
+                                        <input type="number" name="sale" id="sale-price" class="form-control" value="<?=$pro_detail['sale']?>">
                                         <label for="">Hình ảnh</label>
                                         <input type="file" name="image" id="image" class="form-control">
                                         <img src="img/<?=$pro_detail['image']?>" height = "300px" width = "300px" alt="">

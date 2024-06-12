@@ -1,7 +1,11 @@
 <link rel="stylesheet" href="<?php echo 'app/view/css/detail.css'; ?>">
 
 <div class="wrapper-container">
-    <?php extract($data['productDetail']) ?>
+    <?php extract($data['productDetailSale']) ;
+    
+    $discountPercentage = (($gia - $sale) / $gia) * 100;
+
+    ?>
     <div class="row">
         <div class="custom-div">
             <div class="row">
@@ -28,10 +32,9 @@
                     <p>SKU: <?= $id ?>
                     </p>
                 </div>
-
                 <div class="column gia">
-                    <span><?= $gia ?> VND</span>
-
+                    <span><?= $sale ?>VND</span>
+                    <del><?= $gia ?> VND</del> <span>-<?=round($discountPercentage)?>%</span>
                 </div>
             </div>
             <div class="info-product">
