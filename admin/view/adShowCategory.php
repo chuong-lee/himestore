@@ -7,10 +7,10 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Danh sách người dùng</h4>
+                        <h4 class="title">Danh mục các sản phẩm</h4>
                         <div>
-                            <a href="/addpro.html"><button type="button" class="btn btn-primary">
-                                    Thêm tài khoản người dùng
+                            <a href="indexAdmin.php?page=adCategory"><button type="button" class="btn btn-primary">
+                                    Thêm danh mục
                                 </button></a>
                         </div>
                     </div>
@@ -18,27 +18,26 @@
                         <table class="table table-hover table-striped">
                             <thead>
                                 <th>STT</th>
-                                <th>Tên</th>
-                                <th>Email</th>
-                                <th>SĐT</th>
-                                <th>Vai trò</th>
-                                <th>Chức năng</th>
+                                <th>Tên danh mục</th>
+                                <th>Hình</th>
+
                             </thead>
                             <tbody>
-                                <?php $count = 1; ?>
+                                <?php
+                                $counter = 1; ?>
                                 <?php 
-                                foreach ($listUser as $user) {
-                                    extract($user);
-                                    echo'  <tr>
-                                        <td>'.$count++.'</td>
-                                        <td>'.$ten.'</td>
-                                        <td>'.$email.'</td>
-                                        <td>'.$phone.'</td>
-                                        <td>'.$id_role.'</td>
-                                        <td><a href="">Sửa</a> | <a href="">Xóa</a></td>
+                                $category = $data['category'];
+                                foreach ($category as $category){
+                                    extract($category);
+                                    echo '<tr>
+                                        <td>'.$counter++.'</td>
+                                        <td class="name">'.$tenDanhMuc.'</td>
+                                        <td><a href="#"><img style="width: 200px; height: 300px;" src="img/'.$image.'" alt="'.$tenDanhMuc.'"></a></td>
+                                        <td><button type="button" class="btn btn-success"><a href="indexAdmin.php?page=editcate&id='.$id.'">Sửa</a></button> </td>
+                                        <td><button type="button" class="btn btn-danger"><a href="indexAdmin.php?page=delcate&id='.$id.'">Xóa</a></button></td>
                                     </tr>';
                                 } ?>
-                                  
+                                    
                             </tbody>
                         </table>
 
@@ -74,5 +73,8 @@
             </div>
 
 
+
+
         </div>
     </div>
+</div>

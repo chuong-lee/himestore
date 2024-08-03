@@ -6,6 +6,8 @@ require_once '../app/model/CategoryModel.php';
 require_once 'controller/adHomeController.php';
 require_once 'controller/adProductController.php';
 require_once 'controller/adUserController.php';
+require_once 'controller/adCategoryController.php';
+
 
 require_once 'view/adHeader.php';
 if (isset($_GET['page'])) {
@@ -35,6 +37,26 @@ if (isset($_GET['page'])) {
         case 'delpro':
             $delpro = new AdProductcontroller();
             $delpro->delPro();
+            break;
+        case 'adCategory':
+            $controller = new adHomeController();
+            $controller->addcate();
+            $controller = new adCategoryController();
+            $controller->addCategory();
+            break;
+        case 'adShowCategory':
+            $controller = new adCategoryController();
+            $controller->getAllCategory();
+            break;
+        case 'delcate':
+            $delpro = new adCategoryController();
+            $delpro->delCate();
+            break;
+        case 'editcate':
+            $viewedit = new adCategoryController();
+            $viewedit->viewEditCate();
+            $editpro = new adCategoryController();
+            $editpro->editCate();
             break;
         default:
             $home = new adHomeController();

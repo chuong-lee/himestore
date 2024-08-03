@@ -26,7 +26,7 @@
 
             <ul class="nav">
                 <li>
-                    <a href="indexAdmin.php?page=adminAddPro">
+                    <a href="indexAdmin.php?page=adShowCategory">
                         <i class="pe-7s-graph"></i>
                         <p>Danh mục</p>
                     </a>

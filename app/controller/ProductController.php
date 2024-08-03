@@ -26,8 +26,10 @@ class ProductController {
 
     function getAllProduct(){
         $products = $this->productModel->getAllProduct();
+        $sanPhamBanChay = $this->productModel->getProductByLuotMua();
         if (!empty($products)) {
             $data['products'] = $products;
+            $data['dsbc'] = $sanPhamBanChay;
             $this->renderView($data, 'product');
 
         } else {

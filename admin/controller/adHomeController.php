@@ -19,6 +19,11 @@ class adHomeController{
         $this->renderViewAdmin('adminAddPro',$this->data);
     }
 
+    function addcate(){
+        $this->data['dsdm'] = $this->category->getCate();
+        $this->renderViewAdmin('adCategory',$this->data);
+    }
+
     function home(){
         $this->data['dsdm'] = $this->category->getCate();
         $this->data['dsproduct'] = $this->product->getAllProduct();
