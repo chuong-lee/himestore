@@ -9,7 +9,7 @@
                     <div class="header">
                         <h4 class="title">Danh sách người dùng</h4>
                         <div>
-                            <a href="/addpro.html"><button type="button" class="btn btn-primary">
+                            <a href="indexAdmin.php?page=adminAddUser"><button type="button" class="btn btn-primary">
                                     Thêm tài khoản người dùng
                                 </button></a>
                         </div>
@@ -28,14 +28,15 @@
                                 <?php $count = 1; ?>
                                 <?php 
                                 foreach ($listUser as $user) {
+                                    // print_r($listUser);
                                     extract($user);
                                     echo'  <tr>
                                         <td>'.$count++.'</td>
                                         <td>'.$ten.'</td>
                                         <td>'.$email.'</td>
                                         <td>'.$phone.'</td>
-                                        <td>'.$id_role.'</td>
-                                        <td><a href="">Sửa</a> | <a href="">Xóa</a></td>
+                                        <td>'.$type.'</td>
+                                        <td><a href="indexAdmin.php?page=edituser&id='.$id.'">Sửa</a></td>
                                     </tr>';
                                 } ?>
                                   

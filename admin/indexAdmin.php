@@ -3,6 +3,7 @@ require_once '../app/model/database.php';
 require_once '../app/model/UserModel.php';
 require_once '../app/model/ProductModel.php';
 require_once '../app/model/CategoryModel.php';
+require_once '../app/model/RoleModel.php';
 require_once 'controller/adHomeController.php';
 require_once 'controller/adProductController.php';
 require_once 'controller/adUserController.php';
@@ -57,6 +58,18 @@ if (isset($_GET['page'])) {
             $viewedit->viewEditCate();
             $editpro = new adCategoryController();
             $editpro->editCate();
+            break;
+        case 'adminAddUser':
+            $controller = new adHomeController();
+            $controller->adduser();
+            $controller = new adUserController();
+            $controller->addUser();
+            break;
+        case 'edituser':
+            $viewedit = new adUserController();
+            $viewedit->viewEditUser();
+            $editpro = new adUserController();
+            $editpro->editUser();
             break;
         default:
             $home = new adHomeController();
